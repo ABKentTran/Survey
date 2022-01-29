@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kent's Survey</title>
+    <link rel="stylesheet" href="SurveyStyle.css">
+</head>
+<body>
+    <div class="TheWhitePaper"> 
+        <h2 style="text-align: center;">Welcome to Kent's Survey</h2>
+        <p> <strong>Note: </strong> The main of point of this survey is for us to understand, what do you think about Kent Tran?</p>
+        <hr>
+        <div class="impression">
+            <p><em>Intelligence</em></p>
+            <input type="range" value="5" min="1" max="10" class="slider"oninput="this.nextElementSibling.value = this.value">
+             <output>5</output>
+            <p><em>Helpfullness</em></p>
+            <input type="range" value="5" min="1" max="10" class="slider"oninput="this.nextElementSibling.value = this.value">
+             <output>5</output>
+            <p><em>Arrogance</em></p>
+            <input type="range" value="5" min="1" max="10" class="slider"oninput="this.nextElementSibling.value = this.value">
+             <output>5</output>
+            <p><em>Clothing</em></p>
+            <input type="range" value="5" min="1" max="10" class="slider"oninput="this.nextElementSibling.value = this.value">
+             <output>5</output>
+            <p><em>Warmness</em></p>
+            <input type="range" value="5" min="1" max="10" class="slider"oninput="this.nextElementSibling.value = this.value">
+             <output>5</output>
+            <p><em>Friendliness</em></p>
+            <input type="range" value="5" min="1" max="10" class="slider"oninput="this.nextElementSibling.value = this.value">
+             <output>5</output>
+            <p><em>Relatability</em></p>
+            <input type="range" value="5" min="1" max="10" class="slider"oninput="this.nextElementSibling.value = this.value">
+             <output>5</output>
+            <p><em>Judgemental</em></p>
+            <input type="range" value="5" min="1" max="10" class="slider"oninput="this.nextElementSibling.value = this.value">
+             <output>5</output>
+            </div>
+        <div>
+            <label for="opinion"><strong>if you want to write your first impression of Kent Tran?</strong></label><br>
+            <textarea name="" id="" cols="50" rows="10"></textarea> <br>
+           <label for="opinion"><strong>What is the best about Kent Tran?</strong></label>
+           <br>
+           <textarea name="" id="" cols="50" rows="10"></textarea> <br>
+           <label for="opinion"><strong>What is the worst about Kent Tran?</strong></label>
+           <br>
+           <textarea name="" id="" cols="50" rows="10"></textarea>
+        </div>
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content">
+             <h3>To sumbit you need verify yourself as real person</h3>
+             <h4>Verify with bank information</h4>
+             <label>Cardholder Name</label><br>
+             <input type="text"><br>
+             <label>Card Number:</label><br>
+             <input type="text"><br>
+             <label>Expiration Date</label><br>
+             <input type="text"><br>
+             <label>CVC code</label><br>
+             <input type="text"><br>
+             <button>sumbit</button>
+             <script src="/Survey.js"></script>
+             </div>
+        </div>
+        <button class=submit onclick="togglePopup()">submit</button>
+        <script src="/Survey.js"></script>
+</body>
+</html>
